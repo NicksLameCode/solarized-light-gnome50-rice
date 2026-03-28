@@ -1,0 +1,31 @@
+[colors]
+# Solarized Light color scheme
+completion-menu.completion.current = 'bg:#2aa198 #fdf6e3'
+completion-menu.completion = 'bg:#eee8d5 #586e75'
+completion-menu.meta.completion.current = 'bg:#2aa198 #fdf6e3'
+completion-menu.meta.completion = 'bg:#eee8d5 #93a1a1'
+completion-menu.multi-column-meta = 'bg:#eee8d5 #586e75'
+scrollbar.arrow = 'bg:#eee8d5'
+scrollbar = 'bg:#93a1a1'
+selected = '#fdf6e3 bg:#268bd2'
+search = '#fdf6e3 bg:#2aa198'
+search.current = '#fdf6e3 bg:#859900'
+bottom-toolbar = 'bg:#eee8d5 #586e75'
+bottom-toolbar.off = 'bg:#eee8d5 #93a1a1'
+bottom-toolbar.on = 'bg:#eee8d5 #073642'
+search-toolbar = 'noinherit bold'
+search-toolbar.text = 'nobold'
+system-toolbar = 'noinherit bold'
+arg-toolbar = 'noinherit bold'
+arg-toolbar.text = 'nobold'
+bottom-toolbar.transaction.valid = 'bg:#eee8d5 #859900 bold'
+bottom-toolbar.transaction.failed = 'bg:#eee8d5 #dc322f bold'
+prompt = '#2aa198'
+continuation = '#93a1a1'
+
+# Solarized Light table output
+output.table-separator = "#93a1a1"
+output.header = "#268bd2 bold"
+output.odd-row = ""
+output.even-row = "bg:#eee8d5"
+output.null = "#93a1a1"
