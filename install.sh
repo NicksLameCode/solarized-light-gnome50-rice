@@ -202,12 +202,34 @@ dconf write /org/gnome/shell/extensions/blur-my-shell/sigma 20
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/blur false
 dconf write /org/gnome/shell/extensions/blur-my-shell/overview/blur true
 
-# Forge tiling
-dconf write /org/gnome/shell/extensions/forge/window-gap-size "uint32 4"
+# Forge tiling (Hyprland-style)
+dconf write /org/gnome/shell/extensions/forge/window-gap-size "uint32 8"
 dconf write /org/gnome/shell/extensions/forge/window-gap-hidden-on-single true
 dconf write /org/gnome/shell/extensions/forge/focus-border-toggle true
-dconf write /org/gnome/shell/extensions/forge/focus-border-color "'rgba(42, 161, 152, 0.7)'"
+dconf write /org/gnome/shell/extensions/forge/focus-border-size "uint32 3"
+dconf write /org/gnome/shell/extensions/forge/focus-border-color "'rgba(42, 161, 152, 0.9)'"
+dconf write /org/gnome/shell/extensions/forge/split-border-toggle true
+dconf write /org/gnome/shell/extensions/forge/split-border-color "'rgba(38, 139, 210, 0.5)'"
 dconf write /org/gnome/shell/extensions/forge/stacked-tiling-mode-enabled true
+dconf write /org/gnome/shell/extensions/forge/tabbed-tiling-mode-enabled true
+dconf write /org/gnome/shell/extensions/forge/focus-on-hover-enabled true
+dconf write /org/gnome/shell/extensions/forge/float-always-on-top-enabled true
+dconf write /org/gnome/shell/extensions/forge/preview-hint-enabled true
+dconf write /org/gnome/shell/extensions/forge/move-pointer-focus-enabled true
+dconf write /org/gnome/shell/extensions/forge/auto-split-enabled true
+
+# Forge keybinds (vim-style, Hyprland-inspired)
+gsettings set org.gnome.shell.extensions.forge.keybindings window-focus-left "['<Super>h']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-focus-down "['<Super>j']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-focus-up "['<Super>k']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-focus-right "['<Super>l']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-swap-left "['<Super><Shift>h']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-swap-down "['<Super><Shift>j']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-swap-up "['<Super><Shift>k']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-swap-right "['<Super><Shift>l']"
+gsettings set org.gnome.shell.extensions.forge.keybindings con-split-layout-toggle "['<Super>e']"
+gsettings set org.gnome.shell.extensions.forge.keybindings con-tabbed-layout-toggle "['<Super>w']"
+gsettings set org.gnome.shell.extensions.forge.keybindings window-toggle-float "['<Super>space']"
 
 # Just Perfection
 dconf write /org/gnome/shell/extensions/just-perfection/app-menu-label false
