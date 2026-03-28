@@ -4,8 +4,8 @@
 # GCC compiler output colors (warnings=yellow, errors=red, notes=cyan)
 export GCC_COLORS='error=01;31:warning=01;33:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Grep match highlighting (cyan match, yellow filename, green line number)
-export GREP_COLORS='ms=36:mc=36:sl=:cx=:fn=33:ln=32:bn=32:se=93'
+# Grep match highlighting (bold cyan match, bold blue filename, bold green line number)
+export GREP_COLORS='ms=01;36:mc=01;36:sl=:cx=:fn=01;34:ln=01;32:bn=01;32:se=38;2;147;161;161'
 
 # Less colors (reuse man page colors for consistency)
 export LESS='-R --mouse'

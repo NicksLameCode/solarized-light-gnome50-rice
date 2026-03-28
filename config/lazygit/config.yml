@@ -2,29 +2,29 @@
 gui:
   theme:
     activeBorderColor:
-      - "#2aa198"  # cyan
+      - "#2aa198" # cyan
       - bold
     inactiveBorderColor:
-      - "#93a1a1"  # base1
+      - "#93a1a1" # base1
     optionsTextColor:
-      - "#268bd2"  # blue
+      - "#268bd2" # blue
     selectedLineBgColor:
-      - "#eee8d5"  # base2
+      - "#eee8d5" # base2
     selectedRangeBgColor:
       - "#eee8d5"
     cherryPickedCommitBgColor:
-      - "#d1eae7"  # light teal
+      - "#d1eae7" # light teal
     cherryPickedCommitFgColor:
       - "#2aa198"
     unstagedChangesColor:
-      - "#dc322f"  # red
+      - "#dc322f" # red
     defaultFgColor:
-      - "#586e75"  # base01
+      - "#586e75" # base01
   showIcons: true
   border: rounded
   mouseEvents: true
   nerdFontsVersion: "3"
 git:
-  paging:
-    colorArg: always
-    pager: delta --light --paging=never
+  pagers:
+    - colorArg: always
+      pager: delta --light --paging=never

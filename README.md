@@ -71,7 +71,8 @@ The installer handles everything: packages, fonts, cursor, configs, wallpaper, G
 
 | Surface | Details |
 |---------|---------|
-| **GNOME Desktop** | Light mode, teal accent, Papirus-Light icons, Bibata cursor, Blur my Shell, Forge tiling |
+| **GNOME Desktop** | Light mode, teal accent, Papirus-Light icons, Bibata cursor, Blur my Shell |
+| **Forge Tiling** | Hyprland-style: 8px gaps, cyan focus borders, focus-follows-mouse, vim keybinds (Super+H/J/K/L) |
 | **GNOME Shell** | Custom shell theme (top bar, quick settings, calendar, notifications, OSD) |
 | **Terminal (Ptyxis)** | Custom Solarized Light palette with improved readability, JetBrains Mono Nerd Font |
 | **Shell Prompt** | Starship with light pastel powerline segments |
@@ -90,6 +91,8 @@ The installer handles everything: packages, fonts, cursor, configs, wallpaper, G
 | **GRUB** | Solarized Light boot menu (cream background, teal selection) |
 | **Plymouth** | Custom Solarized sunrise boot animation with color-cycling spinner |
 | **GDM Login** | Patched gresource with Solarized stripes wallpaper + light UI (optional) |
+| **mycli** | Solarized Light syntax style, cream toolbars, teal prompt, blue table headers |
+| **Dev Tools** | GCC colored errors/warnings, grep highlighting, Docker/Podman build colors |
 
 ---
 
@@ -162,6 +165,16 @@ Edit `terminal/solarized-light-readable.palette` -- the `[Light]` section contro
 
 Edit `config/starship.toml` -- each segment's `bg:` and `fg:` colors can be changed. The current palette uses light pastel backgrounds with dark accent text.
 
+### Forge tiling keybinds
+
+| Key | Action |
+|-----|--------|
+| `Super+H/J/K/L` | Move focus (vim-style) |
+| `Super+Shift+H/J/K/L` | Swap/move windows |
+| `Super+E` | Toggle split direction |
+| `Super+W` | Toggle tabbed mode |
+| `Super+Space` | Toggle float |
+
 ### Modify the GNOME Shell theme
 
 Edit `gnome-shell/Solarized-Light/gnome-shell/gnome-shell.css` for top bar, notifications, quick settings, etc.
@@ -181,8 +194,8 @@ Edit `gnome-shell/Solarized-Light/gnome-shell/gnome-shell.css` for top bar, noti
 ## File Structure
 
 ```
-shell/          # Bash shell scripts (starship, fzf, dircolors, bat/eza, zoxide, man pages)
-config/         # CLI tool configs (starship, tmux, fastfetch, btop, nvim, lazygit, yazi, cava, glow, vscode)
+shell/          # Bash shell scripts (starship, fzf, dircolors, bat/eza, zoxide, man pages, dev colors)
+config/         # CLI tool configs (starship, tmux, fastfetch, btop, nvim, lazygit, yazi, cava, glow, vscode, mycli)
 gtk/            # GTK 3/4 CSS overrides and settings
 gnome-shell/    # Custom GNOME Shell theme
 terminal/       # Ptyxis terminal palette
